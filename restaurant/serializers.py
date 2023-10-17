@@ -10,5 +10,5 @@ class UserSerializer(serializers.ModelSerializer):
 
 class MenuItemSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ['title', 'price', 'inventory']
+        fields = ['id', 'title', 'price', 'inventory']
         model = MenuItem
