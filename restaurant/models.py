@@ -6,7 +6,7 @@ class MenuItem(models.Model):
     inventory = models.IntegerField()
 
     def __str__(self):
-        return f'self.title '+  'self.price'
+        return f'{self.title} : {str(self.price)}'
     
 
 class Booking(models.Model):
@@ -15,6 +15,6 @@ class Booking(models.Model):
     booking_date = models.DateTimeField()
 
     def __str__(self):
-        return f'self.name' 
+        return f'{self.name}' 
     
 
